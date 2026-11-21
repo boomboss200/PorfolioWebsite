@@ -2,494 +2,398 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="behzad khadim porfolio website ">
-
-    <title>Behzad@work</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Behzad Khadim — Senior Software Engineer</title>
+    <meta name="description" content="Behzad Khadim — Senior Software Engineer at Maqsood Labs. Backend APIs, infrastructure, scaling, AWS and backend team lead." />
+    <meta name="theme-color" content="#fafaf9" />
+    <meta property="og:title" content="Behzad Khadim — Senior Software Engineer" />
+    <meta property="og:description" content="Backend APIs, infrastructure, scaling and AWS. Senior Software Engineer at Maqsood Labs." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'%3EBK%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+    <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Behzad Khadim</div>
-      <div>
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand">Behzad Khadim</a>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#linkedin">LinkedIn</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <a class="btn btn-primary" href="./assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Behzad Khadim</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/logo.avif" alt="Behzad Khadim profile picture" />
-      </div>
-      <br>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Behzad</h1>
-        <p class="section__text__p2">Backend Engineer at Maq-Labs</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/cv.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/behzadkhadim5811/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/boomboss200'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/best-employee.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1.5+ Years in Software Development<br></p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/graduation.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Computer Science<br />COMSATS University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Computer Science graduate with <b>1.5+ years</b> of professional experience in Backend development at Maqsood Labs. I specialize in building scalable, secure, and cloud-ready backend systems using <b>Node.js, NestJS, and AWS services</b>. My technical background also includes experience in data science, machine learning, computer vision, and satellite imagery processing for remote sensing applications. Currently, I’m focusing on deploying backend systems and deepening my expertise in AWS cloud solution architecture to ensure high availability, security, and performance for modern software applications.
-  
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Techincal Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Application Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons8-nestjs-48.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NestJS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-node-js-144.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NodeJs
-                  </h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/django.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-postgresql-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Postgres</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-mysql-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-code-100.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MERN</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-react-120.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Native</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-swift-144.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SwiftUI</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-firebase-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB, Firebase</h3>
-                </div>
-              </article>
-             
-              <article>
-                <img
-                  src="./assets/icons8-tailwind-css-144.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tailwind, Bootstrap</h3>
-                  </div>
-              </article>
-             
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons8-docker-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-aws-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-image-processing-64.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Image Processing</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-machine-learning-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ML Models</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-satellite-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Satellite Imagery</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-remote-control-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Remote Sensing</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-google-earth-144.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Google Earth Engine</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-postman-inc-48.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Postman</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons8-jira-96.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jira</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/github.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git, Github</h3>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <button style="border: none;background: none;"   onclick="window.location.href = 'petsmall.html';">
-                >
-              <img
-                src="./assets/Sale-4.png"
-                alt="Project 1"
-                class="project-img"
-              />
-              </button>
-            </div>
-            <h2 class="experience-sub-title project-title">PetsMall</h2>
-            <p>Shop for pet essentials seamlessly on React-based app, backed by MongoDB and powered by Express routing for efficient server-side functionality.</p>
-            <br>
-
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/boomboss200/PetsMall-MERN-Project.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-             <button style="border: none;background: none;"   onclick="window.location.href = 'fieldSense.html';">
-             >
-              <img
-                src="./assets/Sale-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-          </button>
-            </div>
-            
-            <h2 class="experience-sub-title project-title">FieldSense</h2>
-        
-            <p>Transforming farming with React frontend, Django backend, and ML models for precision agriculture through satellite-based field monitoring.</p>
-            <br>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                disabled
-              >
-              <a href="fieldSense.Html#projects">Demo Video </a>
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <button style="border: none;background: none;"   onclick="window.location.href = 'watkins.html';">
-                >
-              <img
-                src="./assets/SwiftUI.png"
-                alt="Project 3"
-                class="project-img"
-              />
-              </button>
-            </div>
-            <h2 class="experience-sub-title project-title">Watkins2.0 </h2>
-            <p>A step counter app that calculates the distance travelled by the steps taken per unit time. Ideal of self assesment in normal pressure hydrocephalus.</p>
-            <br>
-            
-
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-               AppStore Link
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:mail@behzadspace.com">mail@behzadspace.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/behzadkhadim5811/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+      <nav class="mobile-menu" aria-label="Mobile">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#linkedin">LinkedIn</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="./assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
-      <p>Copyright &#169; 2025 BK. All Rights Reserved.</p>
+    </header>
+
+    <main id="top">
+      <!-- Intro -->
+      <section class="hero" id="about">
+        <div class="container hero-grid">
+          <div>
+            <span class="status"><i></i>Senior Software Engineer at Maqsood Labs</span>
+            <h1>Behzad Khadim</h1>
+            <p class="role">Senior Software Engineer <span>· Backend Lead</span></p>
+            <p class="lead">
+              Computer Science graduate from COMSATS University. I joined Maqsood Labs as a backend engineer and now work as a
+              Senior Software Engineer, leading backend development for client products in Dubai.
+            </p>
+            <ul class="focus" aria-label="Areas of experience">
+              <li>Backend APIs</li>
+              <li>Infrastructure</li>
+              <li>Scaling</li>
+              <li>AWS services</li>
+              <li>Project management</li>
+              <li>Backend lead</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Contact me</a>
+              <a class="btn btn-outline" href="./assets/cv.pdf" target="_blank" rel="noopener">
+                Download CV
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14" /></svg>
+              </a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/behzadkhadim5811/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z" /></svg>
+              </a>
+              <a class="icon-btn" href="https://github.com/boomboss200" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z" /></svg>
+              </a>
+            </div>
+          </div>
+          <div class="desk" aria-hidden="true">
+            <div class="editor">
+              <div class="editor-bar"><i></i><i></i><i></i><span>reviews.controller.ts</span></div>
+              <pre class="code"><code id="code"></code><span class="caret"></span></pre>
+            </div>
+            <div class="keyboard" id="keyboard"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Technical skills</p>
+            <h2 class="section-title">Tools and technologies I work with</h2>
+          </div>
+          <div class="skill-groups">
+            <div class="skill-group reveal">
+              <h3>Backend &amp; databases</h3>
+              <ul class="skills">
+                <li><img src="./assets/icons8-nestjs-48.png" alt="" />NestJS</li>
+                <li><img src="./assets/icons8-node-js-144.png" alt="" />Node.js</li>
+                <li><img src="./assets/icons8-express-js-144.png" alt="" />Express</li>
+                <li><img src="./assets/django.png" alt="" />Django</li>
+                <li><img src="./assets/icons8-postgresql-96.png" alt="" />PostgreSQL</li>
+                <li><img src="./assets/icons8-mysql-96.png" alt="" />MySQL</li>
+                <li><img src="./assets/icons8-mongo-db-96.png" alt="" />MongoDB</li>
+                <li><img src="./assets/icons8-firebase-96.png" alt="" />Firebase</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Cloud &amp; tools</h3>
+              <ul class="skills">
+                <li><img src="./assets/icons8-aws-96.png" alt="" />AWS</li>
+                <li><img src="./assets/icons8-docker-96.png" alt="" />Docker</li>
+                <li><img src="./assets/github.png" alt="" />Git, GitHub</li>
+                <li><img src="./assets/icons8-postman-inc-48.png" alt="" />Postman</li>
+                <li><img src="./assets/icons8-jira-96.png" alt="" />Jira</li>
+                <li><img src="./assets/icons8-vs-code-144.png" alt="" />VS Code</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Mobile &amp; frontend</h3>
+              <ul class="skills">
+                <li><img src="./assets/icons8-react-120.png" alt="" />React Native</li>
+                <li><img src="./assets/icons8-swiftui-144.png" alt="" />SwiftUI</li>
+                <li><img src="./assets/icons8-swift-144.png" alt="" />Swift</li>
+                <li><img src="./assets/icons8-xcode-144.png" alt="" />Xcode</li>
+                <li><img src="./assets/icons8-code-100.png" alt="" />MERN</li>
+                <li><img src="./assets/icons8-tailwind-css-144.png" alt="" />Tailwind, Bootstrap</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Data &amp; remote sensing</h3>
+              <ul class="skills">
+                <li><img src="./assets/icons8-machine-learning-96.png" alt="" />ML Models</li>
+                <li><img src="./assets/icons8-image-processing-64.png" alt="" />Image Processing</li>
+                <li><img src="./assets/icons8-satellite-96.png" alt="" />Satellite Imagery</li>
+                <li><img src="./assets/icons8-remote-control-96.png" alt="" />Remote Sensing</li>
+                <li><img src="./assets/icons8-google-earth-144.png" alt="" />Google Earth Engine</li>
+                <li><img src="./assets/icons8-colaboratory-144.png" alt="" />Google Colab</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Career path -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Career path</p>
+            <h2 class="section-title">Experience</h2>
+          </div>
+          <article class="company reveal">
+            <div class="company-head">
+              <h3 class="company-name"><img src="./assets/logos/maqsoodlabs.svg" alt="Maqsood Labs" class="ml-logo" /></h3>
+              <span class="meta">Lahore, Pakistan · Feb 2024 – Present</span>
+            </div>
+            <ol class="timeline">
+              <li class="current">
+                <div class="step-head"><h4>Senior Software Engineer</h4><span class="badge">Current</span></div>
+                <p>Backend lead for client products. I manage a team on the project for feature delivery and own backend architecture, infrastructure and scaling.</p>
+                <ul class="points">
+                  <li>Lead the backend team, plan features and manage delivery</li>
+                  <li>Design backend APIs and infrastructure on AWS</li>
+                  <li>Scale services and keep releases stable in production</li>
+                </ul>
+              </li>
+              <li>
+                <div class="step-head"><h4>Software Engineer</h4><span class="badge muted">Promoted</span></div>
+                <p>Owned backend services for the GreatPeople platform and worked across its mobile and web apps.</p>
+                <ul class="points">
+                  <li>Used AWS EventBridge and Lambda to schedule background tasks and automate workflows</li>
+                  <li>Built a custom notification system for real-time updates on mobile devices</li>
+                </ul>
+              </li>
+              <li>
+                <div class="step-head"><h4>Associate Software Engineer</h4><span class="badge muted">Feb 2024</span></div>
+                <p>Started as a backend engineer on the GreatPeople platform.</p>
+                <ul class="points">
+                  <li>Migrated the Business App backend from Node.js to NestJS (TypeScript, PostgreSQL, Docker), improving API response times by 27%</li>
+                  <li>Built the backend for the mobile app from scratch: authentication, feedback flows and data management</li>
+                  <li>Led testing and debugging for a stable release</li>
+                </ul>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Projects</p>
+            <h2 class="section-title">What I've worked on</h2>
+          </div>
+
+          <h3 class="subhead first"><img src="./assets/logos/maqsoodlabs.svg" alt="" class="ml-logo sm" />Projects at Maqsood Labs</h3>
+          <article class="project reveal">
+            <div class="project-head">
+              <img class="project-icon lg" src="./assets/logos/greatpeople.png" alt="GreatPeople logo" />
+              <div>
+                <h3>GreatPeople</h3>
+                <p class="kind">Dubai-based platform (including the RateMe apps) · Backend, mobile app, web app</p>
+              </div>
+            </div>
+            <ul class="points two-col">
+              <li>Migrated the Business App backend from Node.js to NestJS, cutting API response times by 27%</li>
+              <li>Built the mobile app backend from scratch: authentication, feedback flows and data management</li>
+              <li>Built backend APIs and services for the business platform</li>
+              <li>Real-time notifications and scheduled jobs with AWS EventBridge and Lambda</li>
+              <li>Contributed to the mobile and web apps</li>
+              <li>Deployed and scaled on AWS</li>
+            </ul>
+            <ul class="tags"><li>NestJS</li><li>Node.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Docker</li><li>AWS</li><li>Mobile</li><li>Web</li></ul>
+            <div class="project-links">
+              <a class="link" href="https://business.greatpeople.co" target="_blank" rel="noopener">business.greatpeople.co
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" /></svg>
+              </a>
+            </div>
+          </article>
+
+          <h3 class="subhead">Personal project</h3>
+          <article class="project featured reveal">
+            <div class="featured-copy">
+              <div class="project-head">
+                <img class="project-icon lg" src="./assets/logos/typebyte.png" alt="TypeByte app icon" />
+                <div>
+                  <h3>TypeByte</h3>
+                  <p class="kind">iOS app · Launched Sept 2026</p>
+                </div>
+              </div>
+              <p>An AI-powered keyboard for iPhone. It rewrites and polishes your text with one tap, right inside iMessage, WhatsApp, Gmail or any other app. I designed, built, launched and marketed it on my own.</p>
+              <div class="stats-row">
+                <div><b>2,000</b><span>Users</span></div>
+                <div><b>Solo</b><span>Built &amp; marketed</span></div>
+                <div><b>iOS</b><span>App Store</span></div>
+              </div>
+              <ul class="tags"><li>iOS</li><li>Swift</li><li>Keyboard extension</li><li>AI</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://apps.apple.com/pk/app/typebyte/id6789036395" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>
+                  View on the App Store
+                </a>
+              </div>
+            </div>
+            <div class="shots">
+              <img src="./assets/typebyte-1.jpg" alt="TypeByte keyboard with a number row" loading="lazy" />
+              <img src="./assets/typebyte-2.jpg" alt="TypeByte rewriting text and voice input" loading="lazy" />
+            </div>
+          </article>
+
+          <h3 class="subhead">Final Year Project</h3>
+          <article class="project featured fyp reveal">
+            <div class="featured-copy">
+              <div class="project-head">
+                <img class="project-icon lg" src="./assets/logos/fieldsense.png" alt="FieldSense logo" />
+                <div>
+                  <h3>FieldSense</h3>
+                  <p class="kind">COMSATS University · 2023</p>
+                </div>
+              </div>
+              <p>Satellite-based crop monitoring for corn. React frontend, Django/MySQL backend, and ML models for fertilizer detection, crop classification and harvest date prediction.</p>
+              <ul class="tags"><li>React</li><li>Django</li><li>Google Earth Engine</li><li>Machine Learning</li></ul>
+              <div class="project-links">
+                <a class="link" href="fieldSense.Html">View project
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+                </a>
+                <a class="link" href="https://github.com/boomboss200/bgreen-template-master" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+            <div class="fyp-img"><img src="./assets/Sale-2.png" alt="FieldSense web app on a laptop" loading="lazy" /></div>
+          </article>
+          <p class="more reveal">Earlier projects: <a href="petsmall.Html">PetsMall (MERN)</a> · <a href="watkins.Html">Watkins 2.0 (iOS)</a></p>
+        </div>
+      </section>
+
+      <!-- LinkedIn -->
+      <section class="section" id="linkedin">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">LinkedIn</p>
+            <h2 class="section-title">Let's connect</h2>
+          </div>
+          <a class="li-card reveal" href="https://www.linkedin.com/in/behzadkhadim5811/" target="_blank" rel="noopener">
+            <div class="li-banner" aria-hidden="true"><span>The first thing you need to know is that the internet is amazing.</span></div>
+            <div class="li-main">
+              <div class="li-body">
+                <div class="li-photo"><span aria-hidden="true">BK</span><img src="./assets/me.jpg" alt="" onerror="this.remove()" /></div>
+                <h3>Behzad Khadim</h3>
+                <p class="li-headline">Software Engineer - Backend || NestJs || AWS-SAA || NodeJs || Python</p>
+                <p class="loc">Lahore, Punjab, Pakistan · <b>500+ connections</b></p>
+              </div>
+              <div class="li-side">
+                <p><img src="./assets/logos/maqsoodlabs.svg" alt="" class="li-org ml" />Maq Dev (Maqsood Labs)</p>
+                <p><img src="./assets/graduation.png" alt="" class="li-org" />COMSATS Institute of Information and Technology</p>
+                <span class="btn btn-li">
+                  <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z" /></svg>
+                  View profile
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Education</p>
+            <h2 class="section-title">Where I studied</h2>
+          </div>
+          <div class="edu">
+            <article class="edu-item reveal">
+              <div class="edu-top">
+                <div>
+                  <h3>Bachelor of Computer Science</h3>
+                  <p class="school">COMSATS University Islamabad, Lahore Campus</p>
+                </div>
+                <span class="years">2020 – 2024</span>
+              </div>
+              <p class="detail">CGPA 3.22 / 4 · Artificial Intelligence, Machine Learning, Digital Image Processing, Remote Sensing, App Development</p>
+              <ul class="awards">
+                <li>1st Position, FYP Poster Competition, Fall 2023</li>
+                <li>3rd Position, FYP Project Competition, Fall 2023</li>
+              </ul>
+              <a class="post" href="https://www.linkedin.com/posts/behzadkhadim5811_remotesensing-comsats-computerscience-ugcPost-7162469957493112832-Ea9Y/" target="_blank" rel="noopener">
+                <img src="./assets/fyp-poster.jpg" alt="FieldSense FYP poster" loading="lazy" />
+                <div>
+                  <span class="src"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z" /></svg>LinkedIn post</span>
+                  <h4>FieldSense at the COMSATS FYP Exhibition</h4>
+                  <p>Remote sensing for crop monitoring: our final year project at COMSATS.</p>
+                  <span class="link">Read the post
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                  </span>
+                </div>
+              </a>
+            </article>
+            <article class="edu-item reveal">
+              <div class="edu-top">
+                <div>
+                  <h3>Intermediate (Pre-Engineering)</h3>
+                  <p class="school">Forman Christian College, Lahore</p>
+                </div>
+                <span class="years">2017 – 2019</span>
+              </div>
+            </article>
+            <article class="edu-item reveal">
+              <div class="edu-top">
+                <div>
+                  <h3>School &amp; Matriculation</h3>
+                  <p class="school">Sadiq Public School, Bahawalpur</p>
+                </div>
+                <span class="years">2004 – 2017</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-box reveal">
+            <div>
+              <h2>Contact me</h2>
+              <p>Open to backend and cloud engineering opportunities.</p>
+              <a class="email" href="mailto:mail@behzadkhadim.dev">mail@behzadkhadim.dev</a>
+            </div>
+            <div class="contact-actions">
+              <a class="icon-btn" href="mailto:mail@behzadkhadim.dev" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="fill: none"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>
+              </a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/behzadkhadim5811/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z" /></svg>
+              </a>
+              <a class="icon-btn" href="https://github.com/boomboss200" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container foot">
+        <span>© <span id="year">2026</span> Behzad Khadim</span>
+        <a href="./assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="site.js"></script>
   </body>
 </html>
